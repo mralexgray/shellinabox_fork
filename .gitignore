@@ -2,3 +2,17 @@
 *.lo
 *~
 .libs
+
+stamp-h1
+
+libtool
+
+*.status
+
+*.log
+
+config.h
+
+Makefile
+.deps
+.DS_Store
