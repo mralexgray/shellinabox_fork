@@ -1,0 +1,491 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		7BF1BADE174564D100B2BF84 /* shellinaboxd */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 7BF1BADF174564D100B2BF84 /* Build configuration list for PBXAggregateTarget "shellinaboxd" */;
+			buildPhases = (
+				7BF1BAE2174564D700B2BF84 /* ShellScript */,
+			);
+			dependencies = (
+				7BF1BAE6174565EF00B2BF84 /* PBXTargetDependency */,
+			);
+			name = shellinaboxd;
+			productName = shellinaboxd;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		7BF1B9B817452E7100B2BF84 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BF1B9B717452E7100B2BF84 /* Cocoa.framework */; };
+		7BF1B9C217452E7100B2BF84 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7BF1B9C017452E7100B2BF84 /* InfoPlist.strings */; };
+		7BF1B9C417452E7100B2BF84 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BF1B9C317452E7100B2BF84 /* main.m */; };
+		7BF1B9C817452E7100B2BF84 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 7BF1B9C617452E7100B2BF84 /* Credits.rtf */; };
+		7BF1B9CB17452E7100B2BF84 /* TTYinaBOXDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BF1B9CA17452E7100B2BF84 /* TTYinaBOXDelegate.m */; };
+		7BF1B9CE17452E7100B2BF84 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7BF1B9CC17452E7100B2BF84 /* MainMenu.xib */; };
+		7BF1BAE81745673400B2BF84 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BF1BAE71745673400B2BF84 /* WebKit.framework */; };
+		7BF1BAEB17456ACC00B2BF84 /* shellinabundle.plugin in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7BF1BADD1745644A00B2BF84 /* shellinabundle.plugin */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7BF1BADC1745644A00B2BF84 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7BF1BAB1174536F900B2BF84 /* shellinabundle.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8D5B49B6048680CD000E48DA;
+			remoteInfo = shellinabundle;
+		};
+		7BF1BAE5174565EF00B2BF84 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7B682B2C16F91C5000ADF346 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7B682B3016F91C5000ADF346;
+			remoteInfo = "make shellinaboxd";
+		};
+		7BF1BAE917456AC700B2BF84 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7BF1BAB1174536F900B2BF84 /* shellinabundle.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 8D5B49AC048680CD000E48DA;
+			remoteInfo = shellinabundle;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		7BF1B9E0174531BC00B2BF84 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				7BF1BAEB17456ACC00B2BF84 /* shellinabundle.plugin in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		7B682B8B16F91DFB00ADF346 /* shellinaboxd */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; name = shellinaboxd; path = ../shellinaboxd; sourceTree = "<group>"; };
+		7BF1B9B417452E7100B2BF84 /* TTYinaBOX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TTYinaBOX.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7BF1B9B717452E7100B2BF84 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		7BF1B9BF17452E7100B2BF84 /* TTYinaBOX-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TTYinaBOX-Info.plist"; sourceTree = "<group>"; };
+		7BF1B9C117452E7100B2BF84 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7BF1B9C317452E7100B2BF84 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7BF1B9C517452E7100B2BF84 /* TTYinaBOX-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TTYinaBOX-Prefix.pch"; sourceTree = "<group>"; };
+		7BF1B9C717452E7100B2BF84 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		7BF1B9C917452E7100B2BF84 /* TTYinaBOXDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTYinaBOXDelegate.h; sourceTree = "<group>"; };
+		7BF1B9CA17452E7100B2BF84 /* TTYinaBOXDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTYinaBOXDelegate.m; sourceTree = "<group>"; };
+		7BF1B9CD17452E7100B2BF84 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		7BF1BAB1174536F900B2BF84 /* shellinabundle.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = shellinabundle.xcodeproj; path = shellinabundle/shellinabundle.xcodeproj; sourceTree = "<group>"; };
+		7BF1BAE71745673400B2BF84 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7BF1B9B117452E7100B2BF84 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BF1BAE81745673400B2BF84 /* WebKit.framework in Frameworks */,
+				7BF1B9B817452E7100B2BF84 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7B682B2B16F91C5000ADF346 = {
+			isa = PBXGroup;
+			children = (
+				7BF1BAB1174536F900B2BF84 /* shellinabundle.xcodeproj */,
+				7B682B8B16F91DFB00ADF346 /* shellinaboxd */,
+				7BF1B9BD17452E7100B2BF84 /* TTYinaBOX */,
+				7BF1B9B517452E7100B2BF84 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7BF1B9B517452E7100B2BF84 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7BF1B9B417452E7100B2BF84 /* TTYinaBOX.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7BF1B9BD17452E7100B2BF84 /* TTYinaBOX */ = {
+			isa = PBXGroup;
+			children = (
+				7BF1B9C917452E7100B2BF84 /* TTYinaBOXDelegate.h */,
+				7BF1B9CA17452E7100B2BF84 /* TTYinaBOXDelegate.m */,
+				7BF1B9CC17452E7100B2BF84 /* MainMenu.xib */,
+				7BF1B9BE17452E7100B2BF84 /* Supporting Files */,
+			);
+			path = TTYinaBOX;
+			sourceTree = "<group>";
+		};
+		7BF1B9BE17452E7100B2BF84 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7BF1BAE71745673400B2BF84 /* WebKit.framework */,
+				7BF1B9B717452E7100B2BF84 /* Cocoa.framework */,
+				7BF1B9BF17452E7100B2BF84 /* TTYinaBOX-Info.plist */,
+				7BF1B9C017452E7100B2BF84 /* InfoPlist.strings */,
+				7BF1B9C317452E7100B2BF84 /* main.m */,
+				7BF1B9C517452E7100B2BF84 /* TTYinaBOX-Prefix.pch */,
+				7BF1B9C617452E7100B2BF84 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7BF1BAD91745644A00B2BF84 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7BF1BADD1745644A00B2BF84 /* shellinabundle.plugin */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXLegacyTarget section */
+		7B682B3016F91C5000ADF346 /* make shellinaboxd */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "$(ACTION)";
+			buildConfigurationList = 7B682B3316F91C5000ADF346 /* Build configuration list for PBXLegacyTarget "make shellinaboxd" */;
+			buildPhases = (
+			);
+			buildToolPath = /usr/bin/make;
+			buildWorkingDirectory = /Volumes/2T/ServiceData/git/shellinabox_fork;
+			dependencies = (
+			);
+			name = "make shellinaboxd";
+			passBuildSettingsInEnvironment = 0;
+			productName = shellinaboxdX;
+		};
+/* End PBXLegacyTarget section */
+
+/* Begin PBXNativeTarget section */
+		7BF1B9B317452E7100B2BF84 /* TTYinaBOX */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7BF1B9D117452E7100B2BF84 /* Build configuration list for PBXNativeTarget "TTYinaBOX" */;
+			buildPhases = (
+				7BF1B9B017452E7100B2BF84 /* Sources */,
+				7BF1B9B117452E7100B2BF84 /* Frameworks */,
+				7BF1B9B217452E7100B2BF84 /* Resources */,
+				7BF1B9E0174531BC00B2BF84 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7BF1BAEA17456AC700B2BF84 /* PBXTargetDependency */,
+			);
+			name = TTYinaBOX;
+			productName = TTYinaBOX;
+			productReference = 7BF1B9B417452E7100B2BF84 /* TTYinaBOX.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7B682B2C16F91C5000ADF346 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Alex Gray";
+			};
+			buildConfigurationList = 7B682B2F16F91C5000ADF346 /* Build configuration list for PBXProject "shellinaboxdX" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7B682B2B16F91C5000ADF346;
+			productRefGroup = 7BF1B9B517452E7100B2BF84 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 7BF1BAD91745644A00B2BF84 /* Products */;
+					ProjectRef = 7BF1BAB1174536F900B2BF84 /* shellinabundle.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				7BF1B9B317452E7100B2BF84 /* TTYinaBOX */,
+				7BF1BADE174564D100B2BF84 /* shellinaboxd */,
+				7B682B3016F91C5000ADF346 /* make shellinaboxd */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		7BF1BADD1745644A00B2BF84 /* shellinabundle.plugin */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = shellinabundle.plugin;
+			remoteRef = 7BF1BADC1745644A00B2BF84 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7BF1B9B217452E7100B2BF84 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BF1B9C217452E7100B2BF84 /* InfoPlist.strings in Resources */,
+				7BF1B9C817452E7100B2BF84 /* Credits.rtf in Resources */,
+				7BF1B9CE17452E7100B2BF84 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7BF1BAE2174564D700B2BF84 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cd \"${SRCROOT}/..\"\npwd\nmv shellinaboxd ~/Desktop/\nmake clean > /dev/null 2>&1\nmv ~/Desktop/shellinaboxd .\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7BF1B9B017452E7100B2BF84 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BF1B9C417452E7100B2BF84 /* main.m in Sources */,
+				7BF1B9CB17452E7100B2BF84 /* TTYinaBOXDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7BF1BAE6174565EF00B2BF84 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7B682B3016F91C5000ADF346 /* make shellinaboxd */;
+			targetProxy = 7BF1BAE5174565EF00B2BF84 /* PBXContainerItemProxy */;
+		};
+		7BF1BAEA17456AC700B2BF84 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = shellinabundle;
+			targetProxy = 7BF1BAE917456AC700B2BF84 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7BF1B9C017452E7100B2BF84 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7BF1B9C117452E7100B2BF84 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		7BF1B9C617452E7100B2BF84 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7BF1B9C717452E7100B2BF84 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		7BF1B9CC17452E7100B2BF84 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7BF1B9CD17452E7100B2BF84 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7B682B3116F91C5000ADF346 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		7B682B3216F91C5000ADF346 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		7B682B3416F91C5000ADF346 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUGGING_SYMBOLS = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		7B682B3516F91C5000ADF346 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		7BF1B9CF17452E7100B2BF84 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TTYinaBOX/TTYinaBOX-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/../**",
+					"$(DSTROOT)",
+				);
+				INFOPLIST_FILE = "TTYinaBOX/TTYinaBOX-Info.plist";
+				OTHER_LDFLAGS = "-lz";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "\"$(SRCROOT)../logging/**\"";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		7BF1B9D017452E7100B2BF84 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TTYinaBOX/TTYinaBOX-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/../**",
+					"$(DSTROOT)",
+				);
+				INFOPLIST_FILE = "TTYinaBOX/TTYinaBOX-Info.plist";
+				OTHER_LDFLAGS = "-lz";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "\"$(SRCROOT)../logging/**\"";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		7BF1BAE0174564D100B2BF84 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		7BF1BAE1174564D100B2BF84 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7B682B2F16F91C5000ADF346 /* Build configuration list for PBXProject "shellinaboxdX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B682B3116F91C5000ADF346 /* Debug */,
+				7B682B3216F91C5000ADF346 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7B682B3316F91C5000ADF346 /* Build configuration list for PBXLegacyTarget "make shellinaboxd" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B682B3416F91C5000ADF346 /* Debug */,
+				7B682B3516F91C5000ADF346 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7BF1B9D117452E7100B2BF84 /* Build configuration list for PBXNativeTarget "TTYinaBOX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7BF1B9CF17452E7100B2BF84 /* Debug */,
+				7BF1B9D017452E7100B2BF84 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7BF1BADF174564D100B2BF84 /* Build configuration list for PBXAggregateTarget "shellinaboxd" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7BF1BAE0174564D100B2BF84 /* Debug */,
+				7BF1BAE1174564D100B2BF84 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7B682B2C16F91C5000ADF346 /* Project object */;
+}

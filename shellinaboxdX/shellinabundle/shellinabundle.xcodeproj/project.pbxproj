@@ -1,0 +1,513 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7BF1BAA61745368400B2BF84 /* libhttp.sym in Resources */ = {isa = PBXBuildFile; fileRef = 7BF1BA591745368300B2BF84 /* libhttp.sym */; };
+		7BF1BB79174570D100B2BF84 /* hashmap.c in Sources */ = {isa = PBXBuildFile; fileRef = 7BF1BA541745368300B2BF84 /* hashmap.c */; };
+		7BF1BB7A174570D100B2BF84 /* httpconnection.c in Sources */ = {isa = PBXBuildFile; fileRef = 7BF1BA571745368300B2BF84 /* httpconnection.c */; };
+		7BF1BB7B174570D100B2BF84 /* server.c in Sources */ = {isa = PBXBuildFile; fileRef = 7BF1BA5A1745368300B2BF84 /* server.c */; };
+		7BF1BB7C174570D100B2BF84 /* ssl.c in Sources */ = {isa = PBXBuildFile; fileRef = 7BF1BA5C1745368300B2BF84 /* ssl.c */; };
+		7BF1BB7D174570D100B2BF84 /* trie.c in Sources */ = {isa = PBXBuildFile; fileRef = 7BF1BA5E1745368300B2BF84 /* trie.c */; };
+		7BF1BB7E174570D100B2BF84 /* url.c in Sources */ = {isa = PBXBuildFile; fileRef = 7BF1BA601745368300B2BF84 /* url.c */; };
+		7BF1BB7F174570DF00B2BF84 /* logging.c in Sources */ = {isa = PBXBuildFile; fileRef = 7BF1BA631745368300B2BF84 /* logging.c */; };
+		7BFF6EF817457A620001BCF5 /* beep.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7BFF6ECE17457A620001BCF5 /* beep.wav */; };
+		7BFF6EF917457A620001BCF5 /* black-on-white.css in Resources */ = {isa = PBXBuildFile; fileRef = 7BFF6ECF17457A620001BCF5 /* black-on-white.css */; };
+		7BFF6EFA17457A620001BCF5 /* cgi-mode-example.sh in Resources */ = {isa = PBXBuildFile; fileRef = 7BFF6ED017457A620001BCF5 /* cgi-mode-example.sh */; };
+		7BFF6EFB17457A620001BCF5 /* cgi_root.html in Resources */ = {isa = PBXBuildFile; fileRef = 7BFF6ED217457A620001BCF5 /* cgi_root.html */; };
+		7BFF6EFC17457A620001BCF5 /* color.css in Resources */ = {isa = PBXBuildFile; fileRef = 7BFF6ED317457A620001BCF5 /* color.css */; };
+		7BFF6EFD17457A620001BCF5 /* enabled.gif in Resources */ = {isa = PBXBuildFile; fileRef = 7BFF6ED417457A620001BCF5 /* enabled.gif */; };
+		7BFF6EFE17457A620001BCF5 /* externalfile.c in Sources */ = {isa = PBXBuildFile; fileRef = 7BFF6ED617457A620001BCF5 /* externalfile.c */; };
+		7BFF6EFF17457A620001BCF5 /* favicon.ico in Resources */ = {isa = PBXBuildFile; fileRef = 7BFF6ED917457A620001BCF5 /* favicon.ico */; };
+		7BFF6F0017457A620001BCF5 /* keyboard-layout.html in Resources */ = {isa = PBXBuildFile; fileRef = 7BFF6EDB17457A620001BCF5 /* keyboard-layout.html */; };
+		7BFF6F0117457A620001BCF5 /* keyboard.png in Resources */ = {isa = PBXBuildFile; fileRef = 7BFF6EDD17457A620001BCF5 /* keyboard.png */; };
+		7BFF6F0217457A620001BCF5 /* launcher.c in Sources */ = {isa = PBXBuildFile; fileRef = 7BFF6EDE17457A620001BCF5 /* launcher.c */; };
+		7BFF6F0317457A620001BCF5 /* monochrome.css in Resources */ = {isa = PBXBuildFile; fileRef = 7BFF6EE017457A620001BCF5 /* monochrome.css */; };
+		7BFF6F0417457A620001BCF5 /* print-styles.css in Resources */ = {isa = PBXBuildFile; fileRef = 7BFF6EE117457A620001BCF5 /* print-styles.css */; };
+		7BFF6F0517457A620001BCF5 /* privileges.c in Sources */ = {isa = PBXBuildFile; fileRef = 7BFF6EE317457A620001BCF5 /* privileges.c */; };
+		7BFF6F0617457A620001BCF5 /* root_page.html in Resources */ = {isa = PBXBuildFile; fileRef = 7BFF6EE617457A620001BCF5 /* root_page.html */; };
+		7BFF6F0717457A620001BCF5 /* service.c in Sources */ = {isa = PBXBuildFile; fileRef = 7BFF6EE717457A620001BCF5 /* service.c */; };
+		7BFF6F0817457A620001BCF5 /* session.c in Sources */ = {isa = PBXBuildFile; fileRef = 7BFF6EE917457A620001BCF5 /* session.c */; };
+		7BFF6F0917457A620001BCF5 /* shell_in_a_box.js in Sources */ = {isa = PBXBuildFile; fileRef = 7BFF6EEC17457A620001BCF5 /* shell_in_a_box.js */; };
+		7BFF6F0A17457A620001BCF5 /* shell_in_a_box.jspp in Resources */ = {isa = PBXBuildFile; fileRef = 7BFF6EED17457A620001BCF5 /* shell_in_a_box.jspp */; };
+		7BFF6F0B17457A620001BCF5 /* shellinaboxd.c in Sources */ = {isa = PBXBuildFile; fileRef = 7BFF6EEE17457A620001BCF5 /* shellinaboxd.c */; };
+		7BFF6F0C17457A620001BCF5 /* shellinaboxd.man.in in Resources */ = {isa = PBXBuildFile; fileRef = 7BFF6EEF17457A620001BCF5 /* shellinaboxd.man.in */; };
+		7BFF6F0D17457A620001BCF5 /* styles.css in Resources */ = {isa = PBXBuildFile; fileRef = 7BFF6EF017457A620001BCF5 /* styles.css */; };
+		7BFF6F0E17457A620001BCF5 /* usercss.c in Sources */ = {isa = PBXBuildFile; fileRef = 7BFF6EF217457A620001BCF5 /* usercss.c */; };
+		7BFF6F0F17457A620001BCF5 /* vt100.js in Sources */ = {isa = PBXBuildFile; fileRef = 7BFF6EF517457A620001BCF5 /* vt100.js */; };
+		7BFF6F1017457A620001BCF5 /* vt100.jspp in Resources */ = {isa = PBXBuildFile; fileRef = 7BFF6EF617457A620001BCF5 /* vt100.jspp */; };
+		7BFF6F1117457A620001BCF5 /* white-on-black.css in Resources */ = {isa = PBXBuildFile; fileRef = 7BFF6EF717457A620001BCF5 /* white-on-black.css */; };
+		8D5B49B0048680CD000E48DA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C167DFE841241C02AAC07 /* InfoPlist.strings */; };
+		8D5B49B4048680CD000E48DA /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */; };
+		C6B72305126CD996004F4A92 /* ShellBundleLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B72304126CD996004F4A92 /* ShellBundleLoader.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		089C167EFE841241C02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		32DBCF630370AF2F00C91783 /* shellinabundle_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = shellinabundle_Prefix.pch; sourceTree = "<group>"; };
+		7BF1BA171745368300B2BF84 /* beep.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = beep.wav; sourceTree = "<group>"; };
+		7BF1BA181745368300B2BF84 /* demo.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = demo.html; sourceTree = "<group>"; };
+		7BF1BA191745368300B2BF84 /* demo.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = demo.js; sourceTree = "<group>"; };
+		7BF1BA1A1745368300B2BF84 /* demo.jspp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = demo.jspp; sourceTree = "<group>"; };
+		7BF1BA1B1745368300B2BF84 /* demo.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = demo.xml; sourceTree = "<group>"; };
+		7BF1BA1C1745368300B2BF84 /* enabled.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = enabled.gif; sourceTree = "<group>"; };
+		7BF1BA1D1745368300B2BF84 /* favicon.ico */ = {isa = PBXFileReference; lastKnownFileType = image.ico; path = favicon.ico; sourceTree = "<group>"; };
+		7BF1BA1E1745368300B2BF84 /* keyboard.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = keyboard.html; sourceTree = "<group>"; };
+		7BF1BA1F1745368300B2BF84 /* keyboard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = keyboard.png; sourceTree = "<group>"; };
+		7BF1BA201745368300B2BF84 /* print-styles.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = "print-styles.css"; sourceTree = "<group>"; };
+		7BF1BA211745368300B2BF84 /* styles.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = styles.css; sourceTree = "<group>"; };
+		7BF1BA221745368300B2BF84 /* usercss-0.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = "usercss-0.css"; sourceTree = "<group>"; };
+		7BF1BA231745368300B2BF84 /* usercss-1.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = "usercss-1.css"; sourceTree = "<group>"; };
+		7BF1BA241745368300B2BF84 /* usercss-2.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = "usercss-2.css"; sourceTree = "<group>"; };
+		7BF1BA251745368300B2BF84 /* usercss-3.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = "usercss-3.css"; sourceTree = "<group>"; };
+		7BF1BA261745368300B2BF84 /* vt100.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = vt100.js; sourceTree = "<group>"; };
+		7BF1BA541745368300B2BF84 /* hashmap.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = hashmap.c; sourceTree = "<group>"; };
+		7BF1BA551745368300B2BF84 /* hashmap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hashmap.h; sourceTree = "<group>"; };
+		7BF1BA561745368300B2BF84 /* http.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = http.h; sourceTree = "<group>"; };
+		7BF1BA571745368300B2BF84 /* httpconnection.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = httpconnection.c; sourceTree = "<group>"; };
+		7BF1BA581745368300B2BF84 /* httpconnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = httpconnection.h; sourceTree = "<group>"; };
+		7BF1BA591745368300B2BF84 /* libhttp.sym */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = libhttp.sym; sourceTree = "<group>"; };
+		7BF1BA5A1745368300B2BF84 /* server.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = server.c; sourceTree = "<group>"; };
+		7BF1BA5B1745368300B2BF84 /* server.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = server.h; sourceTree = "<group>"; };
+		7BF1BA5C1745368300B2BF84 /* ssl.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ssl.c; sourceTree = "<group>"; };
+		7BF1BA5D1745368300B2BF84 /* ssl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ssl.h; sourceTree = "<group>"; };
+		7BF1BA5E1745368300B2BF84 /* trie.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = trie.c; sourceTree = "<group>"; };
+		7BF1BA5F1745368300B2BF84 /* trie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = trie.h; sourceTree = "<group>"; };
+		7BF1BA601745368300B2BF84 /* url.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = url.c; sourceTree = "<group>"; };
+		7BF1BA611745368300B2BF84 /* url.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = url.h; sourceTree = "<group>"; };
+		7BF1BA631745368300B2BF84 /* logging.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = logging.c; sourceTree = "<group>"; };
+		7BF1BA641745368300B2BF84 /* logging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = logging.h; sourceTree = "<group>"; };
+		7BF1BAD617453A4100B2BF84 /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = config.h; path = /Volumes/2T/ServiceData/git/shellinabox_fork/shellinaboxdX/../config.h; sourceTree = "<absolute>"; };
+		7BFF6ECD17457A620001BCF5 /* beep.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = beep.h; sourceTree = "<group>"; };
+		7BFF6ECE17457A620001BCF5 /* beep.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = beep.wav; sourceTree = "<group>"; };
+		7BFF6ECF17457A620001BCF5 /* black-on-white.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = "black-on-white.css"; sourceTree = "<group>"; };
+		7BFF6ED017457A620001BCF5 /* cgi-mode-example.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "cgi-mode-example.sh"; sourceTree = "<group>"; };
+		7BFF6ED117457A620001BCF5 /* cgi_root.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cgi_root.h; sourceTree = "<group>"; };
+		7BFF6ED217457A620001BCF5 /* cgi_root.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = cgi_root.html; sourceTree = "<group>"; };
+		7BFF6ED317457A620001BCF5 /* color.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = color.css; sourceTree = "<group>"; };
+		7BFF6ED417457A620001BCF5 /* enabled.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = enabled.gif; sourceTree = "<group>"; };
+		7BFF6ED517457A620001BCF5 /* enabled.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = enabled.h; sourceTree = "<group>"; };
+		7BFF6ED617457A620001BCF5 /* externalfile.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = externalfile.c; sourceTree = "<group>"; };
+		7BFF6ED717457A620001BCF5 /* externalfile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = externalfile.h; sourceTree = "<group>"; };
+		7BFF6ED817457A620001BCF5 /* favicon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = favicon.h; sourceTree = "<group>"; };
+		7BFF6ED917457A620001BCF5 /* favicon.ico */ = {isa = PBXFileReference; lastKnownFileType = image.ico; path = favicon.ico; sourceTree = "<group>"; };
+		7BFF6EDA17457A620001BCF5 /* keyboard-layout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "keyboard-layout.h"; sourceTree = "<group>"; };
+		7BFF6EDB17457A620001BCF5 /* keyboard-layout.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "keyboard-layout.html"; sourceTree = "<group>"; };
+		7BFF6EDC17457A620001BCF5 /* keyboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = keyboard.h; sourceTree = "<group>"; };
+		7BFF6EDD17457A620001BCF5 /* keyboard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = keyboard.png; sourceTree = "<group>"; };
+		7BFF6EDE17457A620001BCF5 /* launcher.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = launcher.c; sourceTree = "<group>"; };
+		7BFF6EDF17457A620001BCF5 /* launcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = launcher.h; sourceTree = "<group>"; };
+		7BFF6EE017457A620001BCF5 /* monochrome.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = monochrome.css; sourceTree = "<group>"; };
+		7BFF6EE117457A620001BCF5 /* print-styles.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = "print-styles.css"; sourceTree = "<group>"; };
+		7BFF6EE217457A620001BCF5 /* print-styles.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "print-styles.h"; sourceTree = "<group>"; };
+		7BFF6EE317457A620001BCF5 /* privileges.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = privileges.c; sourceTree = "<group>"; };
+		7BFF6EE417457A620001BCF5 /* privileges.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = privileges.h; sourceTree = "<group>"; };
+		7BFF6EE517457A620001BCF5 /* root_page.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = root_page.h; sourceTree = "<group>"; };
+		7BFF6EE617457A620001BCF5 /* root_page.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = root_page.html; sourceTree = "<group>"; };
+		7BFF6EE717457A620001BCF5 /* service.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = service.c; sourceTree = "<group>"; };
+		7BFF6EE817457A620001BCF5 /* service.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = service.h; sourceTree = "<group>"; };
+		7BFF6EE917457A620001BCF5 /* session.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = session.c; sourceTree = "<group>"; };
+		7BFF6EEA17457A620001BCF5 /* session.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = session.h; sourceTree = "<group>"; };
+		7BFF6EEB17457A620001BCF5 /* shell_in_a_box.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = shell_in_a_box.h; sourceTree = "<group>"; };
+		7BFF6EEC17457A620001BCF5 /* shell_in_a_box.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = shell_in_a_box.js; sourceTree = "<group>"; };
+		7BFF6EED17457A620001BCF5 /* shell_in_a_box.jspp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = shell_in_a_box.jspp; sourceTree = "<group>"; };
+		7BFF6EEE17457A620001BCF5 /* shellinaboxd.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = shellinaboxd.c; sourceTree = "<group>"; };
+		7BFF6EEF17457A620001BCF5 /* shellinaboxd.man.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = shellinaboxd.man.in; sourceTree = "<group>"; };
+		7BFF6EF017457A620001BCF5 /* styles.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = styles.css; sourceTree = "<group>"; };
+		7BFF6EF117457A620001BCF5 /* styles.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = styles.h; sourceTree = "<group>"; };
+		7BFF6EF217457A620001BCF5 /* usercss.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = usercss.c; sourceTree = "<group>"; };
+		7BFF6EF317457A620001BCF5 /* usercss.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = usercss.h; sourceTree = "<group>"; };
+		7BFF6EF417457A620001BCF5 /* vt100.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vt100.h; sourceTree = "<group>"; };
+		7BFF6EF517457A620001BCF5 /* vt100.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = vt100.js; sourceTree = "<group>"; };
+		7BFF6EF617457A620001BCF5 /* vt100.jspp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = vt100.jspp; sourceTree = "<group>"; };
+		7BFF6EF717457A620001BCF5 /* white-on-black.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = "white-on-black.css"; sourceTree = "<group>"; };
+		8D5B49B6048680CD000E48DA /* shellinabundle.plugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = shellinabundle.plugin; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D5B49B7048680CD000E48DA /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C6B72300126CD96A004F4A92 /* ShellBundleLoaderProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShellBundleLoaderProtocol.h; sourceTree = "<group>"; };
+		C6B72303126CD996004F4A92 /* ShellBundleLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShellBundleLoader.h; sourceTree = "<group>"; };
+		C6B72304126CD996004F4A92 /* ShellBundleLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShellBundleLoader.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D5B49B3048680CD000E48DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D5B49B4048680CD000E48DA /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		089C166AFE841209C02AAC07 /* PluginPart */ = {
+			isa = PBXGroup;
+			children = (
+				7BFF6ECC17457A620001BCF5 /* shellinabox */,
+				7BF1BAD617453A4100B2BF84 /* config.h */,
+				C6B72303126CD996004F4A92 /* ShellBundleLoader.h */,
+				C6B72304126CD996004F4A92 /* ShellBundleLoader.m */,
+				32DBCF630370AF2F00C91783 /* shellinabundle_Prefix.pch */,
+				C6B72300126CD96A004F4A92 /* ShellBundleLoaderProtocol.h */,
+				7BF1BA271745368300B2BF84 /* demo */,
+				7BF1BA621745368300B2BF84 /* libhttp */,
+				7BF1BA651745368300B2BF84 /* logging */,
+				089C167CFE841241C02AAC07 /* Resources */,
+				19C28FB8FE9D52D311CA2CBB /* Products */,
+			);
+			name = PluginPart;
+			sourceTree = "<group>";
+		};
+		089C167CFE841241C02AAC07 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */,
+				8D5B49B7048680CD000E48DA /* Info.plist */,
+				089C167DFE841241C02AAC07 /* InfoPlist.strings */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		19C28FB8FE9D52D311CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D5B49B6048680CD000E48DA /* shellinabundle.plugin */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7BF1BA271745368300B2BF84 /* demo */ = {
+			isa = PBXGroup;
+			children = (
+				7BF1BA171745368300B2BF84 /* beep.wav */,
+				7BF1BA181745368300B2BF84 /* demo.html */,
+				7BF1BA191745368300B2BF84 /* demo.js */,
+				7BF1BA1A1745368300B2BF84 /* demo.jspp */,
+				7BF1BA1B1745368300B2BF84 /* demo.xml */,
+				7BF1BA1C1745368300B2BF84 /* enabled.gif */,
+				7BF1BA1D1745368300B2BF84 /* favicon.ico */,
+				7BF1BA1E1745368300B2BF84 /* keyboard.html */,
+				7BF1BA1F1745368300B2BF84 /* keyboard.png */,
+				7BF1BA201745368300B2BF84 /* print-styles.css */,
+				7BF1BA211745368300B2BF84 /* styles.css */,
+				7BF1BA221745368300B2BF84 /* usercss-0.css */,
+				7BF1BA231745368300B2BF84 /* usercss-1.css */,
+				7BF1BA241745368300B2BF84 /* usercss-2.css */,
+				7BF1BA251745368300B2BF84 /* usercss-3.css */,
+				7BF1BA261745368300B2BF84 /* vt100.js */,
+			);
+			name = demo;
+			path = /Volumes/2T/ServiceData/git/shellinabox_fork/shellinaboxdX/../demo;
+			sourceTree = "<absolute>";
+		};
+		7BF1BA621745368300B2BF84 /* libhttp */ = {
+			isa = PBXGroup;
+			children = (
+				7BF1BA541745368300B2BF84 /* hashmap.c */,
+				7BF1BA551745368300B2BF84 /* hashmap.h */,
+				7BF1BA561745368300B2BF84 /* http.h */,
+				7BF1BA571745368300B2BF84 /* httpconnection.c */,
+				7BF1BA581745368300B2BF84 /* httpconnection.h */,
+				7BF1BA591745368300B2BF84 /* libhttp.sym */,
+				7BF1BA5A1745368300B2BF84 /* server.c */,
+				7BF1BA5B1745368300B2BF84 /* server.h */,
+				7BF1BA5C1745368300B2BF84 /* ssl.c */,
+				7BF1BA5D1745368300B2BF84 /* ssl.h */,
+				7BF1BA5E1745368300B2BF84 /* trie.c */,
+				7BF1BA5F1745368300B2BF84 /* trie.h */,
+				7BF1BA601745368300B2BF84 /* url.c */,
+				7BF1BA611745368300B2BF84 /* url.h */,
+			);
+			name = libhttp;
+			path = /Volumes/2T/ServiceData/git/shellinabox_fork/libhttp;
+			sourceTree = "<absolute>";
+		};
+		7BF1BA651745368300B2BF84 /* logging */ = {
+			isa = PBXGroup;
+			children = (
+				7BF1BA631745368300B2BF84 /* logging.c */,
+				7BF1BA641745368300B2BF84 /* logging.h */,
+			);
+			name = logging;
+			path = /Volumes/2T/ServiceData/git/shellinabox_fork/logging;
+			sourceTree = "<absolute>";
+		};
+		7BFF6ECC17457A620001BCF5 /* shellinabox */ = {
+			isa = PBXGroup;
+			children = (
+				7BFF6ECD17457A620001BCF5 /* beep.h */,
+				7BFF6ECE17457A620001BCF5 /* beep.wav */,
+				7BFF6ECF17457A620001BCF5 /* black-on-white.css */,
+				7BFF6ED017457A620001BCF5 /* cgi-mode-example.sh */,
+				7BFF6ED117457A620001BCF5 /* cgi_root.h */,
+				7BFF6ED217457A620001BCF5 /* cgi_root.html */,
+				7BFF6ED317457A620001BCF5 /* color.css */,
+				7BFF6ED417457A620001BCF5 /* enabled.gif */,
+				7BFF6ED517457A620001BCF5 /* enabled.h */,
+				7BFF6ED617457A620001BCF5 /* externalfile.c */,
+				7BFF6ED717457A620001BCF5 /* externalfile.h */,
+				7BFF6ED817457A620001BCF5 /* favicon.h */,
+				7BFF6ED917457A620001BCF5 /* favicon.ico */,
+				7BFF6EDA17457A620001BCF5 /* keyboard-layout.h */,
+				7BFF6EDB17457A620001BCF5 /* keyboard-layout.html */,
+				7BFF6EDC17457A620001BCF5 /* keyboard.h */,
+				7BFF6EDD17457A620001BCF5 /* keyboard.png */,
+				7BFF6EDE17457A620001BCF5 /* launcher.c */,
+				7BFF6EDF17457A620001BCF5 /* launcher.h */,
+				7BFF6EE017457A620001BCF5 /* monochrome.css */,
+				7BFF6EE117457A620001BCF5 /* print-styles.css */,
+				7BFF6EE217457A620001BCF5 /* print-styles.h */,
+				7BFF6EE317457A620001BCF5 /* privileges.c */,
+				7BFF6EE417457A620001BCF5 /* privileges.h */,
+				7BFF6EE517457A620001BCF5 /* root_page.h */,
+				7BFF6EE617457A620001BCF5 /* root_page.html */,
+				7BFF6EE717457A620001BCF5 /* service.c */,
+				7BFF6EE817457A620001BCF5 /* service.h */,
+				7BFF6EE917457A620001BCF5 /* session.c */,
+				7BFF6EEA17457A620001BCF5 /* session.h */,
+				7BFF6EEB17457A620001BCF5 /* shell_in_a_box.h */,
+				7BFF6EEC17457A620001BCF5 /* shell_in_a_box.js */,
+				7BFF6EED17457A620001BCF5 /* shell_in_a_box.jspp */,
+				7BFF6EEE17457A620001BCF5 /* shellinaboxd.c */,
+				7BFF6EEF17457A620001BCF5 /* shellinaboxd.man.in */,
+				7BFF6EF017457A620001BCF5 /* styles.css */,
+				7BFF6EF117457A620001BCF5 /* styles.h */,
+				7BFF6EF217457A620001BCF5 /* usercss.c */,
+				7BFF6EF317457A620001BCF5 /* usercss.h */,
+				7BFF6EF417457A620001BCF5 /* vt100.h */,
+				7BFF6EF517457A620001BCF5 /* vt100.js */,
+				7BFF6EF617457A620001BCF5 /* vt100.jspp */,
+				7BFF6EF717457A620001BCF5 /* white-on-black.css */,
+			);
+			name = shellinabox;
+			path = ../../shellinabox;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D5B49AC048680CD000E48DA /* shellinabundle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB913A08733D840010E9CD /* Build configuration list for PBXNativeTarget "shellinabundle" */;
+			buildPhases = (
+				8D5B49AF048680CD000E48DA /* Resources */,
+				8D5B49B1048680CD000E48DA /* Sources */,
+				8D5B49B3048680CD000E48DA /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = shellinabundle;
+			productInstallPath = "$(HOME)/Library/Bundles";
+			productName = PluginPart;
+			productReference = 8D5B49B6048680CD000E48DA /* shellinabundle.plugin */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		089C1669FE841209C02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1DEB913E08733D840010E9CD /* Build configuration list for PBXProject "shellinabundle" */;
+			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 089C166AFE841209C02AAC07 /* PluginPart */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D5B49AC048680CD000E48DA /* shellinabundle */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D5B49AF048680CD000E48DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D5B49B0048680CD000E48DA /* InfoPlist.strings in Resources */,
+				7BF1BAA61745368400B2BF84 /* libhttp.sym in Resources */,
+				7BFF6EF817457A620001BCF5 /* beep.wav in Resources */,
+				7BFF6EF917457A620001BCF5 /* black-on-white.css in Resources */,
+				7BFF6EFA17457A620001BCF5 /* cgi-mode-example.sh in Resources */,
+				7BFF6EFB17457A620001BCF5 /* cgi_root.html in Resources */,
+				7BFF6EFC17457A620001BCF5 /* color.css in Resources */,
+				7BFF6EFD17457A620001BCF5 /* enabled.gif in Resources */,
+				7BFF6EFF17457A620001BCF5 /* favicon.ico in Resources */,
+				7BFF6F0017457A620001BCF5 /* keyboard-layout.html in Resources */,
+				7BFF6F0117457A620001BCF5 /* keyboard.png in Resources */,
+				7BFF6F0317457A620001BCF5 /* monochrome.css in Resources */,
+				7BFF6F0417457A620001BCF5 /* print-styles.css in Resources */,
+				7BFF6F0617457A620001BCF5 /* root_page.html in Resources */,
+				7BFF6F0A17457A620001BCF5 /* shell_in_a_box.jspp in Resources */,
+				7BFF6F0C17457A620001BCF5 /* shellinaboxd.man.in in Resources */,
+				7BFF6F0D17457A620001BCF5 /* styles.css in Resources */,
+				7BFF6F1017457A620001BCF5 /* vt100.jspp in Resources */,
+				7BFF6F1117457A620001BCF5 /* white-on-black.css in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D5B49B1048680CD000E48DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BF1BB7F174570DF00B2BF84 /* logging.c in Sources */,
+				7BF1BB79174570D100B2BF84 /* hashmap.c in Sources */,
+				7BF1BB7A174570D100B2BF84 /* httpconnection.c in Sources */,
+				7BF1BB7B174570D100B2BF84 /* server.c in Sources */,
+				7BF1BB7C174570D100B2BF84 /* ssl.c in Sources */,
+				7BF1BB7D174570D100B2BF84 /* trie.c in Sources */,
+				7BF1BB7E174570D100B2BF84 /* url.c in Sources */,
+				C6B72305126CD996004F4A92 /* ShellBundleLoader.m in Sources */,
+				7BFF6EFE17457A620001BCF5 /* externalfile.c in Sources */,
+				7BFF6F0217457A620001BCF5 /* launcher.c in Sources */,
+				7BFF6F0517457A620001BCF5 /* privileges.c in Sources */,
+				7BFF6F0717457A620001BCF5 /* service.c in Sources */,
+				7BFF6F0817457A620001BCF5 /* session.c in Sources */,
+				7BFF6F0917457A620001BCF5 /* shell_in_a_box.js in Sources */,
+				7BFF6F0B17457A620001BCF5 /* shellinaboxd.c in Sources */,
+				7BFF6F0E17457A620001BCF5 /* usercss.c in Sources */,
+				7BFF6F0F17457A620001BCF5 /* vt100.js in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		089C167DFE841241C02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C167EFE841241C02AAC07 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB913B08733D840010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_ENABLE_OBJC_GC = unsupported;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = shellinabundle_Prefix.pch;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/../..";
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Library/Bundles";
+				OTHER_CFLAGS = "-DBUNDLEBUILD=1";
+				OTHER_LDFLAGS = (
+					"-lz",
+					"-lssl",
+					"-lcrypto",
+				);
+				PRODUCT_NAME = shellinabundle;
+				SDKROOT = "";
+				WRAPPER_EXTENSION = plugin;
+			};
+			name = Debug;
+		};
+		1DEB913C08733D840010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_GC = unsupported;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = shellinabundle_Prefix.pch;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/../..";
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Library/Bundles";
+				OTHER_CFLAGS = "-DBUNDLEBUILD=1";
+				OTHER_LDFLAGS = (
+					"-lz",
+					"-lssl",
+					"-lcrypto",
+				);
+				PRODUCT_NAME = shellinabundle;
+				SDKROOT = "";
+				WRAPPER_EXTENSION = plugin;
+			};
+			name = Release;
+		};
+		1DEB913F08733D840010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_GC = required;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = NO;
+				ONLY_ACTIVE_ARCH = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.6;
+			};
+			name = Debug;
+		};
+		1DEB914008733D840010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_GC = required;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = NO;
+				PREBINDING = NO;
+				SDKROOT = macosx10.6;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB913A08733D840010E9CD /* Build configuration list for PBXNativeTarget "shellinabundle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB913B08733D840010E9CD /* Debug */,
+				1DEB913C08733D840010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB913E08733D840010E9CD /* Build configuration list for PBXProject "shellinabundle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB913F08733D840010E9CD /* Debug */,
+				1DEB914008733D840010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 089C1669FE841209C02AAC07 /* Project object */;
+}

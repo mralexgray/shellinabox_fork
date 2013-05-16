@@ -16,3 +16,16 @@ config.h
 Makefile
 .deps
 .DS_Store
+*.xcsettings
+
+*.xcworkspacedata
+
+*.xcuserstate
+
+*.xcbkptlist
+
+shellinaboxdX/TTYinaBOX/en.lproj/Credits.rtf
+
+*.la
+
+shellinaboxd
